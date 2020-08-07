@@ -1,0 +1,5 @@
+pylint
+boto3
+black
+click
+flask
