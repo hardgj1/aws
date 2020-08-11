@@ -10,7 +10,7 @@ def api(cname, key, secret, nfrom, nto):
         'to': nto,
         'text': ctext,
     })
-    print(f"Sent message result: {result}")
+    print(f"Sent API message result: {result}")
     return result
 
 @click.command()
@@ -20,9 +20,8 @@ def api(cname, key, secret, nfrom, nto):
 @click.option('--nfrom')
 @click.option('--nto')
 def callapi(cname, key, secret, nfrom, nto):
-    print("About to call API")
+    print(f"About to call API with: cname {cname}, key {key}, secret {secret}, nfrom {nfrom}, nto {nto}")
     results = api(cname, key, secret, nfrom, nto)
-    print(f"Sent API Call from CLI: {results}")
     
 if __name__ == '__main__':
     #pylint: disable=no-value-for-parameter
