@@ -21,7 +21,7 @@ def api(cname, key, secret, nfrom, nto):
 @click.option('--nto')
 def callapi(cname, key, secret, nfrom, nto):
     print(f"About to call API with: cname {cname}, key {key}, secret {secret}, nfrom {nfrom}, nto {nto}")
-    results = api(cname, key, secret, nfrom, nto)
+    api(cname, key, secret, nfrom, nto)
     
 if __name__ == '__main__':
     #pylint: disable=no-value-for-parameter

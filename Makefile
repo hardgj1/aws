@@ -3,7 +3,8 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	pylint --disable=R,C,E1120 hello.py
+	pylint --disable=R,C,E1120 telco.py
+	
 
 format:
 	black hellodetect.py
