@@ -3,3 +3,6 @@ boto3
 black
 click
 flask
+wikipedia
+nexmo
+ipython
